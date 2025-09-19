@@ -60,6 +60,8 @@ p {
     color: #434455;
 }
 
+
+
 .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -510,4 +512,117 @@ p {
 
 .footer-link-svg {
     fill: #f4f4fd;
+}
+
+
+/* -------------- MODAL ----------------- */
+
+.modal-overlay {
+    background: rgba(46, 47, 66, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease-in-out;
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    position: relative;
+    background: #fcfcfc;
+    border-radius: 4px;
+    padding: 72px 24px 24px;
+    width: 408px;
+    min-height: 584px;
+    overflow-y: auto;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-btn-close {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #E7E9FC;
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.modal-close {}
+
+
+.modal-title {
+    font-weight: 500;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.modal-field {
+    margin-bottom: 8px;
+}
+
+.modal-field-textarea {
+    margin-bottom: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 4px;
+}
+
+.modal-input-box {
+    position: relative;
+}
+
+.modal-input {
+    padding-left: 38px;
+    padding-right: 8px;
+    outline: transparent;
+    height: 40px;
+}
+
+.modal-element {
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    outline: transparent;
+}
+
+.modal-textarea {
+    height: 120px;
+    padding: 8px 16px;
+    resize: none;
+}
+
+
+.modal-input-svg {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: #2E2F42;
+
+
 }
