@@ -286,7 +286,7 @@
           growth solutions. </p>
       </div>
       <div class="footer-container-link">
-        <p class="footer-sicial-text">Social media</p>
+        <p class="footer-text">Social media</p>
         <ul class="footer-link-list">
           <li class="footer-link-item">
             <a href="" class="footer-link">
@@ -319,9 +319,23 @@
         </ul>
 
       </div>
+      <div class="footer-container-email">
+        <p class="footer-text">Subscribe</p>
+        <form class="footer-form">
+          <label class="footer-form-label">
+            <input class="footer-form-input" type="email" name="footer-email" id="footer-email" placeholder="E-mail">
+          </label>
+
+          <button class="footer-form-btn" type="submit">Subscribe
+            <svg class="footer-form-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-send-button"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
-  <div class="modal-overlay is-open">
+  <div class="modal-overlay">
 
     <div class="modal">
       <button class="modal-btn-close" type="button"><svg class="modal-close" width="8" height="8">
@@ -364,14 +378,15 @@
             placeholder="Text input"></textarea>
         </div>
         <div class="modal-field-checkbox">
-          <input class="modal-checkbox" type="checkbox" name="user-privacy" id="user-privacy" value="user-privacy">
+          <input class="modal-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
+            value="true">
           <label class="modal-label modal-label-checkbox " for="user-privacy">
             <span class="modal-checkbox-span">
               <svg class="modal-checkbox-svg" width="10" height="8">
                 <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the <a сlass="modal-checkbox-link" href="#">Privacy Policy</a>
+            I accept the terms and conditions of the <a href="" class="modal-checkbox-link">Privacy Policy</a>
           </label>
         </div>
 
